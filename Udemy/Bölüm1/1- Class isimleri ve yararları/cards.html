@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<style>
+    body {
+        padding: 50px;
+    }
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="card-header">Kartın baslık kısmı oluşturuldu</div>
+        <div class="card-body">Kartın gövdesi oluşturuldu</div>
+        <div class="card-footer">Kartın ayak kısmı oluşturuldu</div>
+    </div>
+
+    <div class="card my-3 w-50">
+        <img src="https://picsum.photos/400" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Kartın başlık kısmı</h5>
+            <p class="card-text">Kartın text kısmı</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Liste 1. eleman</li>
+            <li class="list-group-item">List-group-flush diyerek sağ tarafındaki cizgileri kaldırdık ve card yapısı ile
+                birleşmiş oldu</li>
+        </ul>
+    </div>
+
+    <div class="card my-3 w-25">
+        <div class="card-body">
+            <h5 class="card-title">Kartın başlık kısmı</h5>
+            <p class="card-text">Kartın text kısmı</p>
+        </div>
+        <img src="https://picsum.photos/300" alt="" class="card-img-bottom">
+    </div>
+
+    <div class="card my-3">
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="https://picsum.photos/400" alt="" class="img-fluid rounded-start">
+            </div>
+
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title">Row classını eklersek eğer otomatikmen satırı 12 colona böler ve col-4
+                        yazarak ilk 4
+                        colonu resime sonraki 8 colonu yazı alanına bırakmış olduk</h5>
+                    <p class="card-text">Resime img-fluid i ekleyerek 4 colonluk alanlık yerin widthini %100 yapar //
+                        Rounded-start ile de resmin sol tarafında border radius eklemiş olduk </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

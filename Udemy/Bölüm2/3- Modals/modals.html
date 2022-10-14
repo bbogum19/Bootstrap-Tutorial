@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Documents</title>
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            If you view want modal , click me!
+        </button>
+
+        <div class="modal fade" id="myModal" data-bs-backdrop="static">
+            <!-- class fade ile modalin gelişine efekt vermiş oluyoruz // data-bs-backdrop="static" kodu ile de modali sadece
+            carpı ve close butonları ile kapatabilirsin (data-bs-backdrop'u yazmazsan eğer herhangi bir yere tıklayınca
+            modal kapanır.) -->
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                <!-- modale scrollable(dikey kaydırma) ekledik -->
+                <!-- modal-fullscreen-sm-down koduyla cihazon pxi smnin altına düştüğünce fullScreen moduna geçer -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                        <!-- data-bs-dismiss="modal" kodu ile X işaretine basınca modal kapanır -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus, aut sequi quam
+                            veritatis neque!
+                        </p>
+                        <div style="height: 800px;"></div>
+                        <p>Bu şekilde modal-dialog kısmına scrollable ekleyebiliriz.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- data-bs-dismiss="modal" kodu ile Close butonuna basınca modal kapanır -->
+
+                        <button type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

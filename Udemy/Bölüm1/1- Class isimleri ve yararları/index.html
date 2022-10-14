@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- 
+                                                Başlık / Header 
+
+                                            <p class="h1">H1 baslık</p> 
+    -->
+
+    <!-- 
+                                    Paragrafı güzelleştirme / Beautify the paragraph
+
+                            <p class="lead" >Yazı tipi ve font büyüklüğü değiştirme.</p>
+
+     -->
+
+    <!--                                 Yazı tipi büyüklüğü / Font size
+
+                                    <p class="fs-1">Font size arttırma.</p>
+                                    <p class="fw-bold">Yazı kalınlaştırma</p>
+                                    <p class="fst-italic">Yazı tipi değiştirme</p>
+    -->
+    <!-- 
+                                                Renk / Color 
+
+                    <p class="text-primary opacity-50">Yazı mavi oldu , saydamlığı %50 yaptık</p>
+                    <div class="bg-secondary bg-gradient">Arka plan gri oldu , gradient ile renk geçişi yaptık</div>
+                    <span class="badge bg-primary">Otomatik olarak yazı rengini ve margin , padding değerleriyle güzelleştirdi</span>
+                    <span class="badge rounded-pill bg-warning">Rounded ile border-radius eklemiş olduk</span> 
+    -->
+    <!--   
+                                                Butonlar / Buttons
+
+                    <button class="btn btn-info">Açık mavi renkli bir buton</button>
+                    <a href="#" class="btn btn-success">Link</a>
+                    <button class="btn btn-outline-success">Üstüne gelindiğinde yeşil renge dönüşen bir buton</button>
+                    <button class="btn btn-dark btn-lg">Büyük bir buton</button> 
+    -->
+
+    <!-- 
+                                                Margin / Padding
+
+                    margin - padding => {property}{sides}-{size} şeklinde yazılır.
+
+                    {property} :
+                        m:  margin
+                        p:  padding
+
+                    {sides} :
+                        t:  top              => mt || pt
+                        b:  bottom           => mb || pb
+                        s:  start (left)     => ms || ps
+                        e:  end (right)      => me || pe
+                        x:  left + right     => mx || px
+                        y:  top + bottom     => my || py
+                        
+                    {size} :
+                        0: mt-0 => margin-top: 0;
+                        1: mt-1 => $spacer * 0.25 (spacer belli bir değerdir değiştirilebilinir)
+                        2: mt-2 => $spacer * 0.50
+                        3: mt-3 => $spacer 
+                        4: mt-4 => $spacer * 1.5
+                        5: mt-5 => $spacer * 3
+                        auto: mx-auto 
+    
+
+                <div class="bg-primary p-3 mb-3">Mavi bir dive padding ve margin bottom 3 değerini verdik</div>
+                <div class="bg-success p-4 mt-3 mx-auto" style="width: 200px;">200 px e sahip bir yeşil dive padding 4 ile margin
+                    top 3 değerini verdik bunlara ekstra margin x auto yazarak x ekseni üzerinde sağdan soldan boşluk bırakarak
+                    ortaladık</div>
+    -->
+
+    <!--                                        Borders / Shadows 
+
+                <div class="p-3 mb-3 bg-warning border border-dark border-3 rounded" style="width: 200px;">
+                    border rengi dark olan,borderin kalınlığı 4 olan,border-radius verdiğimiz bir çerçeve oluşturduk
+                </div>
+
+                <div class="p-3 mb-3 bg-light rounded shadow">arka plan rengi light olan dive gölgelendirme verdik </div>
+                <div class="p-3 mb-3 bg-success rounded shadow-lg">arka plan rengi yeşil olan dive large boyutunda gölgelendirme verdik </div>
+     -->
+
+    <!-- 
+                                                Lists / Tables 
+                <ul class="list-inline">
+                    <li class="list-inline-item">Yatay liste 1. eleman</li>
+                    <li class="list-inline-item">Yatay liste 2. eleman</li>
+                    <li class="list-inline-item">Yatay liste 3. eleman</li>
+                </ul>
+
+                <ul class="list-group w-50">
+                    <li class="list-group-item list-group-item-warning">Dikey liste 1. elemanın rengini warning yaptık</li>
+                    <li class="list-group-item active">Dikey liste 2. elemanı active classı ile sectik background rengi verdik gibi düşün</li>
+                    <li class="list-group-item list-group-item-danger">ul nin içerisine w-50 diyerek tablonun genişliğini sayfanın %50 sini kapsar hale getirdik</li>
+                </ul>
+
+                <div class="mt-3 list-group">
+                    <a href="" class="list-group-item list-group-item-action">Action sayesinde Link1 hale getirdik</a>
+                    <a href="" class="list-group-item list-group-item-action">Action sayesinde Link2 hale getirdik</a>
+                    <a href="" class="list-group-item list-group-item-action active">Action sayesinde Link3 hale getirdik</a>
+                </div> 
+
+                    <table class="table table-bordered table-hover table-striped">
+        table-striped: tabloda bir satır gri bi satır beyaz renkli olmasını sağlar
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Şehir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-warning">
+                    <td>1</td>
+                    <td>Berkay Emre</td>
+                    <td>Boğum</td>
+                    <td>Denizli</td>
+                </tr>
+                <tr class="table-info">
+                    <td>2</td>
+                    <td>Burak</td>
+                    <td>Boğum</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Erenay Deniz</td>
+                    <td>Bilge</td>
+                    <td>Aydın</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Barış</td>
+                    <td>Bilge</td>
+                    <td>İzmir</td>
+                </tr>
+            </tbody>
+        </table>
+    -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
